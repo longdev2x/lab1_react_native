@@ -5,27 +5,39 @@ import SectionView from './comps/SectionView'
 
 const App = () => {
 
+  const Bai1 = () => {
+    return (
+      <View>
+        <Header
+          renderLeft={null}
+          title={"Header"}
+          renderRight={null}
+        />
+        <Header
+          renderLeft={null}
+          title={"Trang Chủ"}
+          renderRight={""}
+        />
+        <Header
+          renderLeft={null}
+          title={""}
+          renderRight={""}
+        />
+      </View>
+    )
+  }
+
+  const Bai2 = () => {
+    return (
+      <View style={{flex: 1}}>
+        <SectionView/>
+      </View>
+    )
+  }
+
   return (
-    // <View>
-    //   <Header
-    //     renderLeft={null}
-    //     title={"Header"}
-    //     renderRight={null}
-    //   />
-    //   <Header
-    //     renderLeft={null}
-    //     title={"Trang Chủ"}
-    //     renderRight={""}
-    //   />
-    //   <Header
-    //     renderLeft={null}
-    //     title={""}
-    //     renderRight={""}
-    //   />
-    // </View>
-    <View style={{flex: 1}}>
-      <SectionView/>
-    </View>
+    // <Bai1/>
+    <Bai2/>
   )
 }
 
